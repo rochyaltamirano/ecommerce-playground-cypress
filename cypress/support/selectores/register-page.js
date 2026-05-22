@@ -1,0 +1,10 @@
+export const FIRSTNAME = '#input-firstname';
+export const LASTNAME = '#input-lastname';
+export const EMAIL = '#input-email';
+export const TELEPHONE = '#input-telephone';
+export const PASSWORD = '#input-password';
+export const CONFIRM_PASSWORD = '#input-confirm';
+export const NEWSLETTER_YES = '.custom-control-label:contains("Yes")';
+export const TERMS_CHECKBOX = '.custom-control-label:contains("I have read and agree to the ")';
+export const SUBMIT_BUTTON = 'input[type="submit"]';
+export const TEXT_DANGER = '.text-danger';
