@@ -43,4 +43,19 @@ describe('Login de usuarios', () => {
         });
    });
 
+   it.only('Logout', () => {
+     const email = 'ralta@yopmail.com';
+     const password = '1q2w3e4r5t';
+
+     cy.get(LoginPage.EMAIL).type(email);
+     cy.get(LoginPage.PASSWORD).type(password);
+     cy.get(LoginPage.LOGIN_BUTTON).click();
+
+     cy.contains('My Account').should('be.visible');
+
+     cy.get(LoginPage.ITEM_LIST).contains('Logout').click();;
+
+     cy.contains('Account Logout').should('be.visible'); 
+   })
+
 })  
