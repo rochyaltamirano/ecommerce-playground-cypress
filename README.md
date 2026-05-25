@@ -23,12 +23,7 @@ Antes de ejecutar el proyecto necesitas:
 
 ## Instalación de Cypress
 
-Si aún no tienes `package.json`, crea uno en la raíz del proyecto:
-
-```bash
-cd /Users/rocioaltamirano/Documents/ecommerce-playground-cypress
-npm init -y
-```
+Si aún no tienes `package.json`, crea uno en la raíz del proyecto
 
 Luego instala Cypress como dependencia de desarrollo:
 
