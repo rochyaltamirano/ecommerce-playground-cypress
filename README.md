@@ -80,9 +80,3 @@ npx cypress run
 - Evita seleccionar elementos por texto dinámico cuando sea posible
 - Prefiere `cy.contains()` solo para validaciones de texto visibles
 - Usa `cy.wait()` con cuidado; prefiere validar elementos y estados
-
-## Notas adicionales
-
-Si no existe `package.json` en el proyecto, el paso de instalación es necesario antes de ejecutar Cypress.
-
-Si deseas, puedo ayudarte a agregar un `package.json` con Cypress ya incluido y un script de ejecución rápida.
