@@ -3,15 +3,9 @@ import * as FavoritesPage from '../../support/selectores/favorites-page';
 
 describe('Favoritos', () => {
     beforeEach(() => {
-        cy.visit('/index.php?route=account/login');
         const email = 'ralta@yopmail.com';
         const password = '1q2w3e4r5t';
-
-        cy.get(LoginPage.EMAIL).type(email);
-        cy.get(LoginPage.PASSWORD).type(password);
-        cy.get(LoginPage.LOGIN_BUTTON).click();
-        // esperar a que el login haya completado
-        cy.contains('My Account').should('be.visible');
+        cy.login(email, password);
     });
 
     it('Lista vacía', () => {

@@ -40,12 +40,7 @@ describe('Comprar productos', () => {
     it('Comprar un producto al carrito desde el detalle logueado', () => {
         const email = 'ralta@yopmail.com';
         const password = '1q2w3e4r5t';
-
-        cy.visit('/index.php?route=account/login');
-      
-        cy.get(LoginPage.EMAIL).type(email);
-        cy.get(LoginPage.PASSWORD).type(password);
-        cy.get(LoginPage.LOGIN_BUTTON).click();
+        cy.login(email, password);
 
         cy.visit('/index.php?route=product/product&product_id=58');
 
