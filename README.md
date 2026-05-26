@@ -37,6 +37,23 @@ Si prefieres `yarn`:
 yarn add cypress --dev
 ```
 
+## Instalación de Faker
+
+Faker te permite generar datos realistas aleatorios para tus pruebas.
+
+Para generar datos de usuarios aleatorios (nombres, emails, contraseñas, etc.), instala Faker:
+
+```bash
+npm install @faker-js/faker --save-dev
+```
+
+Si prefieres `yarn`:
+
+```bash
+yarn add @faker-js/faker --dev
+```
+
+
 ## Configuración
 
 Este proyecto ya incluye la configuración básica de Cypress en `cypress.config.js`.
@@ -68,10 +85,3 @@ npx cypress run
 - `cypress/e2e/` - especificaciones de prueba
 - `cypress/support/` - comandos y utilidades de Cypress
 - `cypress.config.js` - configuración principal de Cypress
-
-## Buenas prácticas
-
-- Usa selectores estables, preferiblemente `data-*` o IDs específicos
-- Evita seleccionar elementos por texto dinámico cuando sea posible
-- Prefiere `cy.contains()` solo para validaciones de texto visibles
-- Usa `cy.wait()` con cuidado; prefiere validar elementos y estados
