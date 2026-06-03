@@ -39,8 +39,6 @@ yarn add cypress --dev
 
 ## Instalación de Faker
 
-Faker te permite generar datos realistas aleatorios para tus pruebas.
-
 Para generar datos de usuarios aleatorios (nombres, emails, contraseñas, etc.), instala Faker:
 
 ```bash
